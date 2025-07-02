@@ -1,0 +1,231 @@
+.warpper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.tonglan {
+  position: relative;
+  height: 125px;
+}
+
+.tonglan .warpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tonglan .head-logo img {
+  height: 120px;
+  width: 274px;
+}
+
+.tonglan .head-contact {
+  position: relative;
+  /* 设为相对定位，为伪元素绝对定位提供参考 */
+  margin-top: 40px;
+  /* 距离上方40px */
+  width: 225px;
+  /* 宽度225px */
+  height: 56px;
+  /* 高度56px */
+  overflow: hidden;
+  /* 超出部分隐藏，防止内容溢出 */
+}
+
+.tonglan .head-contact::before {
+  content: "";
+  /* 生成一个空内容的伪元素，必须要添加 */
+  position: absolute;
+  /* 绝对定位，覆盖在父元素上 */
+  inset: 0;
+  /* 上下左右都为0，填满父元素 */
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4)),
+    url('../src/20-户外运动.png');
+  /* 设置背景图片 */
+  background-position: 70% 60%;
+  /* 背景图片显示位置，横向70%，纵向60% */
+  background-size: cover;
+  /* 背景图片等比缩放，覆盖整个区域 */
+  opacity: 0.4;
+  /* 背景图片透明度为0.4 */
+  z-index: 0;
+  /* 层级为0，位于内容下方 */
+}
+
+.tonglan .head-contact>div {
+  position: relative;
+  /* 设为相对定位，保证内容在伪元素之上 */
+  z-index: 1;
+  /* 层级为1，显示在伪元素上方 */
+}
+
+/* .head-contact 里的内容（如“联系电话”和号码）始终显示在半透明背景图片的上方 */
+
+.tonglan .head-contact div {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tonglan .head-contact .contact {
+  margin-top: 5px;
+  font-size: 14px;
+  color: rgb(109, 109, 109);
+}
+
+.tonglan .head-contact .phone {
+  font-weight: 600;
+  font-size: 17px;
+  color: rgb(223, 123, 15);
+}
+
+
+
+/* 导航 */
+.head-nav {
+  margin-top: 10px;
+  height: 50px;
+  background-color: #04b4ff;
+  /* 你想要的颜色 */
+}
+
+.head-nav .warpper ul {
+  display: flex;
+}
+
+.head-nav .warpper ul li {
+  line-height: 50px;
+  font-size: 17px;
+  transition: background-color 0.5s ease;
+  /* 添加过渡效果 */
+}
+
+.head-nav .warpper ul li a {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+}
+
+
+
+
+/* 轮播图 */
+.head-carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.head-carousel .carousel-list {
+  display: flex;
+  width: 500%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.head-carousel .carousel-list img {
+  width: calc(100% / 5);
+  height: 100%;
+  object-fit: cover;
+}
+
+.head-carousel .carousel-left {
+  width: 500px;
+  height: 100%;
+  /* background-color: pink; */
+  position: absolute;
+  top: 50%;
+  /* 垂直方向从顶部50%开始 */
+  transform: translateY(-50%);
+  /* 再向上移动自身高度的50%，实现真正的垂直居中 */
+  z-index: 10;
+  /*确保在图片列表之上 */
+  cursor: pointer;
+  /* 鼠标样式改为手型 */
+}
+
+.head-carousel .carousel-right {
+  width: 500px;
+  height: 100%;
+  /* background-color: pink; */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  /* 垂直方向从顶部50%开始 */
+  transform: translateY(-50%);
+  /* 再向上移动自身高度的50%，实现真正的垂直居中 */
+  z-index: 10;
+  /*确保在图片列表之上 */
+  cursor: pointer;
+  /* 鼠标样式改为手型 */
+}
+
+.carousel-indicator {
+  position: absolute;
+  bottom: 10px;
+  right: 48%;
+  /* transform: translateX(-50%); */
+  z-index: 10;
+}
+
+.carousel-indicator ul {
+  display: flex;
+}
+
+.carousel-indicator li {
+  width: 12px;
+  height: 12px;
+  margin: 0 3px;
+  background-color: rgb(245, 245, 245, 0.3);
+  border-radius: 100%;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+
+/* swiper-slide轮播 */
+.swiper-slide {
+  height: 50px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+
+/* 活动 */
+.activity-banner {
+  margin-top: 60px;
+  width: 100%;
+  height: 40px;
+  /* background-color: #dfdfdf; */
+  display: flex;
+}
+
+.activity-banner span {
+  line-height: 40px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.activity-banner .item ul {
+  display: flex;
+  margin-left: 150px;
+  margin-top: 15px;
+}
+
+.activity-banner .item ul li {
+  margin-right: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+}
+
+
+.activity-banner .more {
+  width: 40px;
+  height: 36px;
+  display: flex;
+  margin-left: auto;
+  line-height: 40px;
+}
