@@ -1,1 +1,0 @@
-import{c as a,w as e,b as s,o as t,d as o,e as n,k as r}from"./index-DJJA5MTP.js";import{_}from"./_plugin-vue_export-helper.BCo6x5W8.js";const d=_({__name:"index",setup:_=>(_,d)=>{const l=r,p=s;return t(),a(p,{class:"container"},{default:e((()=>[o(l,null,{default:e((()=>[n("我的 - 个人中心")])),_:1})])),_:1})}},[["__scopeId","data-v-b9ba34e5"]]);export{d as default};

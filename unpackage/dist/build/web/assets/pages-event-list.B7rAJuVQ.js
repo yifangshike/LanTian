@@ -1,0 +1,1 @@
+import{c as s,w as a,b as e,o as t,d as o,e as r,k as l}from"./index-DGiuS6zq.js";import{_ as n}from"./_plugin-vue_export-helper.BCo6x5W8.js";const _=n({__name:"list",setup:n=>(n,_)=>{const p=l,u=e;return t(),s(u,{class:"container"},{default:a((()=>[o(p,null,{default:a((()=>[r("活动列表 - 官方 & 搭子")])),_:1})])),_:1})}},[["__scopeId","data-v-f8985741"]]);export{_ as default};

@@ -1,1 +1,0 @@
-import{c as a,w as s,b as e,o as t,d as o,e as n,k as r}from"./index-DJJA5MTP.js";import{_}from"./_plugin-vue_export-helper.BCo6x5W8.js";const d=_({__name:"index",setup:_=>(_,d)=>{const l=r,p=e;return t(),a(p,{class:"container"},{default:s((()=>[o(l,null,{default:s((()=>[n("导航 - 路线库")])),_:1})])),_:1})}},[["__scopeId","data-v-5381394a"]]);export{d as default};
