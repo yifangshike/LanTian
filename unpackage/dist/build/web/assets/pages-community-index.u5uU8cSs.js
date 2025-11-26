@@ -1,0 +1,1 @@
+import{c as a,w as s,b as e,o as t,d as o,e as n,k as r}from"./index-DJJA5MTP.js";import{_ as d}from"./_plugin-vue_export-helper.BCo6x5W8.js";const _=d({__name:"index",setup:d=>(d,_)=>{const l=r,p=e;return t(),a(p,{class:"container"},{default:s((()=>[o(l,null,{default:s((()=>[n("社区 - 互动交流")])),_:1})])),_:1})}},[["__scopeId","data-v-8ffad840"]]);export{_ as default};

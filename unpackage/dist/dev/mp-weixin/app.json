@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/event/list",
+    "pages/route/index",
+    "pages/community/index",
+    "pages/user/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "蓝天户外",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#03c610",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/event/list",
+        "text": "活动",
+        "iconPath": "static/tabbar/event.png",
+        "selectedIconPath": "static/tabbar/event-active.png"
+      },
+      {
+        "pagePath": "pages/route/index",
+        "text": "导航",
+        "iconPath": "static/tabbar/route.png",
+        "selectedIconPath": "static/tabbar/route-active.png"
+      },
+      {
+        "pagePath": "pages/community/index",
+        "text": "社区",
+        "iconPath": "static/tabbar/community.png",
+        "selectedIconPath": "static/tabbar/community-active.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "static/tabbar/user.png",
+        "selectedIconPath": "static/tabbar/user-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"list.js","sources":["E:/liulanqi_xiazai/HBuilderX.4.76.2025082103 (1)/HBuilderX/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvZXZlbnQvbGlzdC52dWU"],"sourcesContent":["import MiniProgramPage from 'D:/desktop/whlthw/whlt/WuHanJournal/pages/event/list.vue'\nwx.createPage(MiniProgramPage)"],"names":["MiniProgramPage"],"mappings":";;;;;;;;;AACA,GAAG,WAAWA,SAAe;"}
